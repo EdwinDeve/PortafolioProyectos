@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomeView from "./Views/HomeView";
 import ListadoProyectos from "./Views/ProjectsViews/ListadoProyectos";
+import DetalleProyecto from "./Views/ProjectsViews/DetalleProyecto";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
     <br></br>
     <Routes>
       <Route exath path="/" Component={HomeView}/>
-      <Route exath path="/Proyectos" Component={ListadoProyectos}/>
+      <Route path="/Proyectos" Component={ListadoProyectos}/>
+      <Route path="/Detalles" Component={DetalleProyecto}/>
     </Routes>
     </BrowserRouter>
   );

@@ -10,7 +10,7 @@ function ListadoProyectos() {
       <div className='row p-5'>
         {ListadoSoftware.map((Proyecto) => (
           <div className='col-md-4 text-center'>
-            <Link className='p-3 link-underline link-underline-opacity-0'>
+            <Link to={'/Detalles'} state={Proyecto} className='p-3 link-underline link-underline-opacity-0'>
               <div className=' card bg-primary-subtle'>
                 {/* encabezado */}
                 <div className=' card-header'>
